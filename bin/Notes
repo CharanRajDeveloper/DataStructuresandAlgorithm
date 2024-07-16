@@ -1,0 +1,93 @@
+A local variable cannot be defined with "static" keyword.
+Java is a statically-typed programming language. 
+It means, all variables must be declared before its use. That is why we need to declare variable's type and name.
+An if-else statement can evaluate almost all the types of data such as integer, floating- point, character, pointer, or Boolean. 
+A switch statement can evaluate either an integer or a character. 
+In the case of 'if-else' statement, either the 'if' block or the 'else' block will be executed based on the condition.
+
+Commands: 
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
+
+Restart.
+
+Once Done Trying Running System File Checker SFC Scan 
+
+sfc /scannow
+
+what is marker interface.
+
+
+PUT method is called when you have to modify a single resource, while POST method is called when you have to add a child resource.
+You can use UPDATE query in PUT, whereas you can use create query in POST.
+If you send the same PUT request multiple times, the result will remain the same, but if you send the same POST request multiple times, you will receive different results.
+PUT method is idempotent, whereas POST method is not idempotent.
+\\\
+
+
+A utility class in Java is a class that provides static methods that are accessible for use across an application. The static methods in utility classes are used for performing common routines in our application. Utility classes cannot be instantiated and are sometimes stateless without static variables.
+
+
+A thread pool is a collection of reusable threads that are used to execute tasks. It is a way to manage threads efficiently and avoid creating new threads for each task.
+
+
+In Java, thread pools are implemented using the java.util.concurrent.ExecutorService interface
+
+Volatile keyword is used to modify the value of a variable by different threads. It is also used to make classes thread safe. It means that multiple threads can use a method and instance of the classes at the same time without any problem. The volatile keyword can be used either with primitive type or objects.
+
+ FileOutputStream is used to write data to a file, while ObjectOutputStream is used to write objects to a file. ObjectOutputStream serializes the objects, which means that it converts them into a sequence of bytes that can be written to a file
+ 
+ 
+ Spring Initializr is a web-based tool.With the help of Spring Initializr, we can easily generate the structure of the Spring Boot Project with minimal configuration
+ 
+ 
+Difference Between @Controller and @RestController Annotation in Spring
+ 
+@Controller is used to mark classes as Spring MVC Controller.
+It is a specialized version of @Component annotation.
+In @Controller,we can return a view in Spring Web MVC.
+It was added to Spring 2.5 version.
+
+
+
+
+@RestController annotation is a special controller used in RESTful Web services, 
+and it’s the combination of @Controller and @ResponseBody annotation.
+It is a specialized version of @Controller annotation.
+
+In @RestController, we can not return a view.
+It was added to Spring 4.0 version.
+
+
+
+It's a general-purpose annotation that can handle requests of any HTTP method (GET, POST, PUT, DELETE, etc.).
+You can specify the HTTP method using the method attribute.
+Example:
+Execution output
+@RequestMapping(value = "/users", method = RequestMethod.GET)
+public List<User> getUsers() {
+    // ...
+}
+
+Marker interface,Transactional in spring boot,batch,handling exceptions in spring boot
+
+Logging in Spring Boot plays a vital role in Spring Boot applications for recording information, actions, and events within the app.
+
+
+For Synchronized methods, the lock will be held thoroughout the method scope,while in the synchronized block,the lock is held only during that block scope.
+
+Synchronized method locks on the object instance the method is contained in  while a synchronized block can lock on any object.
+
+synchronized block:
+synchoronized(this){
+}
+
+synchoronized method:
+ public synchoronized void function(){
+ }
+ 
+  a lightweight thread is a thread that takes less processing time, 
+  whereas a heavyweight thread is a thread that requires more processing time.
+  
+  As every object in java has only one lock(monitor) and wait (), notify (),notifyAll() are used for monitor sharing thats why they are part of Object class rather than Thread class
