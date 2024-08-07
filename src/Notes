@@ -91,3 +91,13 @@ synchoronized method:
   whereas a heavyweight thread is a thread that requires more processing time.
   
   As every object in java has only one lock(monitor) and wait (), notify (),notifyAll() are used for monitor sharing thats why they are part of Object class rather than Thread class
+  
+  
+A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
+
+The Factory Method Pattern is also known as Virtual Constructor.
+
+Real Time Example Singleton Design Pattern is: DB Connection,logger.
+Real Time Example Factory Design Pattern is: Electricity Bill,Car manufacturing company of different models.
+
+Builder Pattern says that "construct a complex object from simple objects using step-by-step approach"
